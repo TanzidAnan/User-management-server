@@ -3,7 +3,8 @@ const cors = require('cors');
 const app =express();
 const port =process.env.PORT || 5000;
 
-app.use(cors())
+app.use(cors());
+app.use(express.json())
 
 const users =[
     {id:1,name:'Tanzid',Address:'Dhaka',email:'info1@gmail.com',password:123456},
@@ -21,7 +22,7 @@ app.get('/users',(req,res) =>{
 
 app.post('/users',(req,res) =>{
     console.log('post api heating')
-    console.log(res.body)
+    console.log(req.body)
 })
 
 
