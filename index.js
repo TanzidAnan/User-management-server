@@ -6,10 +6,10 @@ const port =process.env.PORT || 5000;
 app.use(cors())
 
 const users =[
-    {id:1,name:'Tanzid',Address:'Dhaka',email:'info1@gmail.com'},
-    {id:2,name:'Marzan',Address:'Dhaka',email:'info2@gmail.com'},
-    {id:3,name:'Anan',Address:'Dhaka',email:'info3@gmail.com'},
-    {id:4,name:'Tanzid anan',Address:'Dhaka',email:'info4@gmail.com'},
+    {id:1,name:'Tanzid',Address:'Dhaka',email:'info1@gmail.com',password:123456},
+    {id:2,name:'Marzan',Address:'Dhaka',email:'info2@gmail.com',password:123456},
+    {id:3,name:'Anan',Address:'Dhaka',email:'info3@gmail.com',password:123456},
+    {id:4,name:'Tanzid anan',Address:'Dhaka',email:'info4@gmail.com',password:123456},
 ]
 
 app.get('/' ,(req,res) =>{
