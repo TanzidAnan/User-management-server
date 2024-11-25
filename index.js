@@ -19,6 +19,11 @@ app.get('/users',(req,res) =>{
     res.send(users)
 })
 
+app.post('/users',(req,res) =>{
+    console.log('post api heating')
+    console.log(res.body)
+})
+
 
 app.listen(port,() =>{
     console.log(`surver is running Port ${port}`)
